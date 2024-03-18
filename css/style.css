@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary: #fff;
+    --secondary: #FAFAFA;
+    --borda: #DBDBDB;
+    --botao1: #4CB5F9;
+    --botao2: #26A5F7;
+    --botao-hover: #1877F2;
+    --link1: #3851A5;
+    --link2: #00376B;
+    --span: #737373;
+    --borda-input: #a09d9d;
+    --borda-cadeado: #262626;
+}
+
+.container {
+    width: 105vw;
+    height: 105vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+}
+
+/* Formatando o topo */
+
+.topo{
+    position: fixed;
+    bottom: 90%;
+    left: 0%;
+    width: 100%;
+    border: 1px solid var(--borda);
+}
+
+.topo img {
+    width: 8.5%;
+    position: fixed;
+    left: 15%;
+    top: 2.2%;
+    z-index: 2;
+}
+
+.topo .imagem {
+    width: 100%;
+    height: 8.7%;
+    position: fixed;
+    left: 0%;
+    top: 1%;
+    z-index: 1;
+}
+
+/* Formatando o formulário de esqueceu a senha */
+
+.caixa1 {
+    width: 420px;
+    height: 590px;
+    position: absolute;
+    top: 13%;
+    background-color: var(--primary);
+    border: 1px solid var(--borda);
+    z-index: 0;
+}
+
+.cadeado {
+    font-size: 69px;
+    color: var(--borda-cadeado);
+    position: absolute;
+    left: 38%;
+    top: 4%;
+    border: 3px solid var(--borda-cadeado);
+    border-radius: 100%;
+    padding: 10px;
+    z-index: -1;
+}
+
+#problems {
+    font-weight: bold;
+    color: var(--borda-cadeado);
+    position: absolute;
+    left: 29%;
+    top: 21.98%;
+}
+
+#texto {
+    color: var(--borda-input);
+    width: 90%;
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.form .element1 {
+    display: block;
+    position: absolute;
+    top: 38%;
+    left: 9.7%;
+    width: 79.8%;
+    padding: 10px;
+    padding-left: 7px;
+    margin: 6px;
+    margin-right: 25px;
+    box-sizing: border-box;
+    background-color: var(--secondary);
+    border: none;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    outline: none;
+}
+
+.form .element1:focus {
+    border-color: var(--borda-input);
+}
+
+.botao1 {
+    position: absolute;
+    left: 11.15%;
+    width: 79.8%;
+    text-align: center;
+    font-size: 13.9px;
+    color: var(--primary);
+    padding: 9px;
+    top: 48%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--botao1);
+}
+
+.botao1:hover{
+    background-color: var(--botao-hover);
+    cursor: pointer;
+}
+
+.p-nf {
+    text-decoration: none;
+    font-size: 12.3px;
+    color: var(--link2);
+    position: absolute;
+    top: 56%;
+    left: 28%;
+}
+
+/* Formatando linha abaixo do botão */
+
+.linha1 {
+    position: absolute;
+    left: 11.87%;
+    top: 66%;
+    width: 33%;
+    color: var(--borda);
+}
+
+span {
+    position: absolute;
+    left: 48.89%;
+    top: 64.66%;
+    font-size: 14px;
+    color: var(--span);
+}
+
+.linha2 {
+    position: absolute;
+    left: 57%;
+    top: 66%;
+    width: 33%;
+    color: var(--borda);
+}
+
+/* Formatando o criar nova conta */
+
+.nw-a {
+    text-decoration: none;
+    color: var(--borda-cadeado);
+    font-size: 14.4px;
+    position: absolute;
+    left: 39.7%;
+    top: 70%;
+}
+
+.nw-a:hover {
+    color: var(--borda-input);
+}
+
+/* Formatando botão de voltar ao login */
+
+.botao2 {
+    position: absolute;
+    width: 99.97%;
+    left: 0.20%;
+    top: 93.1%;
+    padding: 12px;
+    border: 1px solid var(--borda);
+    background-color: var(--secondary);
+}
+
+.botao2 a {
+    text-decoration: none;
+    color: var(--borda-cadeado);
+    font-size: 14.4px;
+}
+
+.botao2 a:hover {
+    color: var(--borda-input);
+}
